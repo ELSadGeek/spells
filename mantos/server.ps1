@@ -6,4 +6,5 @@
 	IT WORKS!
 #>
 
-DISM /Online /Cleanup-Image /RestoreHealth /Source:WIM:D:\install.wim:IndexNumber /LimitAccess
+DISM /Online /Cleanup-Image /RestoreHealth /Source:WIM:d:\install.wim:1 /LimitAccess
+sfc /scannow
