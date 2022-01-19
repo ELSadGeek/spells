@@ -14,3 +14,4 @@ robocopy "C:\scripts" "\\172.16.3.250\spells\$Env:Computername" /R:5 /W:5 /MT:16
  
  #Probando Git syncronización con servidor
  #Probando segunda syncronización
+ #Tercera actualización
