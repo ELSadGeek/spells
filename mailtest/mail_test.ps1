@@ -12,8 +12,8 @@ $smtp_credential = New-Object System.Management.Automation.PSCredential ('factur
 $From = new-object System.Net.Mail.MailAddress("facturas@mtinter.com.mx", "Facturas MTI")
 $SMTPServer = "smtp.gmail.com"
 $SMTPPort = "587"
-$To = "nhernandez@mtinter.com.mx"
-$Cc = "soporte@mtinter.com.mx"
+$To = "jfernandez@mtinter.com.mx"
+$Cc = "nhernandez@mtinter.com.mx"
 $Subject = Get-Date
 $Body = "Prueba, saludos.$From $SMTPServer $SMTPPort $Subject desde $env:computername"
 
