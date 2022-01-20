@@ -1,7 +1,32 @@
+<#
+.Synopsis
+    Programa para configurar Windows 10
+	  
+.Description
+	IT WORKS!
+#>
 
-Write-Output "Iniciando script remoto sysmti.com.mx"
+Get-AppxPackage -AllUsers *xbox* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *camera* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *feedback* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *BingWeather* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *SoundRecorder* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *MicrosoftSolitaireCollection* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *GetHelp* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Zune* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *YourPhone* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *OneDriveSync* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *OneDriveSync* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Paint* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *People* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *maps* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *3DViewer* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *WindowsAlarms* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *OfficeHub* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Dolby* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *ZuneVideo* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Skypeapp* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *GetStarted* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Dolby* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *FeedbackHub* | Remove-AppxPackage
 
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-# Set-ExecutionPolicy Unrestricted -Scope Process -Force; iex ((Get-Content 'https://sysmti.com.mx/scripts/start.ps1')) 
-choco install powershell-core -y
-Set-ExecutionPolicy Unrestricted -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://sysmti.com.mx/scripts/start.ps1'))
