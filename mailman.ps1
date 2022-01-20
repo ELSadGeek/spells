@@ -11,8 +11,8 @@ $SFile = Get-Content -Path "C:\scripts\mail_settings.json" | ConvertFrom-Json
 
 #Preparar datos de envio
 $To = "jorge.fernandez.trueba@outlook.com"
-$Cc = Get-Content -Path "C:\tmp\mail_test\Cc.txt"
-$Att = Get-Content -Path "C:\tmp\mail_test\At.txt"  
+$Cc = Get-Content -Path "C:\scripts\tmp\Cc.txt"
+$Att = Get-Content -Path "C:\scripts\tmp\At.txt"  
 $Cc.ToString()
 $Att.ToString()
 $Subject = "mail_test"
