@@ -30,4 +30,3 @@ Get-AppxPackage -AllUsers *GetStarted* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Dolby* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *FeedbackHub* | Remove-AppxPackage
 
-#prueba 1 
