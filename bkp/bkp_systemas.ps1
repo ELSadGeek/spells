@@ -94,3 +94,4 @@ $SMTPPort = "587"
     
 Send-MailMessage -From $From -to $To -Cc $Cc -Subject $Subject -BodyAsHtml $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential $smtp_credential -Attachments $Attachment -DeliveryNotificationOption OnSuccess
 
+XL93M#v859@LlxL viserys
