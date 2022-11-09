@@ -18,7 +18,7 @@ Start-Transcript -Path "D:/bkp/logs/$ID$t.txt"
 # Disable-NetAdapter -Name "LAN" -Confirm:$false
 
 
-$sistema = "C:\$t"
+$sys_path = "C:\$t"
 $SNAP = "D:\bkp\$t\SNAP"
 $SYNC = "D:\bkp\$t\SYNC"
 
@@ -26,7 +26,7 @@ Write-Output "------------------------------------------------------------------
     RESPALDANDO TABLAS DEL SISTEMA DE $t
 -------------------------------------------------------------------------------"
 
-7z a -r -m0=LZMA2:d64k:fb32 -ms=8m -mmt=30 -mx=1 $SNAP\$ID.7z  $sistema\data\*.*
+7z a -r -m0=LZMA2:d64k:fb32 -ms=8m -mmt=30 -mx=1 $SNAP\$ID.7z  $sys_path\data\*.*
 $hash = (Get-FileHash -Path "$SNAP\$ID.7z" -Algorithm SHA256).Hash
 $sha = (Get-FileHash -Path "$SNAP\$ID.7z" -Algorithm SHA256).Algorithm
 
@@ -58,7 +58,7 @@ Write-Output "------------------------------------------------------------------
     SINCRONIZANDO CON UBICACION LOCAL
 -------------------------------------------------------------------------------"
 
-robocopy "$sistema" "$sync" /R:5 /W:5 /MT:16 /MIR /Z /XD "*temp*"
+robocopy "$sys_path" "$sync" /R:5 /W:5 /MT:16 /MIR /Z /XD "*temp*"
 
 Write-Output "-------------------------------------------------------------------------------
     TERMINADO
